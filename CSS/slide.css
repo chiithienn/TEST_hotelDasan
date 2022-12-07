@@ -1,0 +1,47 @@
+.slidewrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.slidewrap img {
+  height: 500px;
+  width: 1000px;
+}
+
+/*  promotion*/
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 3100px;
+  animation: slide 8s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 1000px;
+}
+
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -1000px;
+  }
+  50% {
+    margin-left: -1000px;
+  }
+  60% {
+    margin-left: -2000px;
+  }
+  80% {
+    margin-left: -2000px;
+  }
+}

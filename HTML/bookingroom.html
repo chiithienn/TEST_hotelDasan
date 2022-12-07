@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking room</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="../JS/bookingroom.js" defer></script>
+    <link rel="stylesheet" href="../CSS/bookingroom.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!--  -->
+    <section class="home" id="home">
+      <div class="container">
+        <h1>OUR ROOM</h1>
+        <p>Enjoy your vacation</p>
+
+        <div class="content grid">
+          <div class="box">
+            <span>CHECKIN DATE </span> <br />
+            <input type="date" placeholder="29/20/2021" />
+          </div>
+          <div class="box">
+            <span>CHECKOUT DATE </span> <br />
+            <input type="date" placeholder="29/20/2021" />
+          </div>
+          <div class="box">
+            <span>ADULTS</span> <br />
+            <input type="number" placeholder="01" />
+          </div>
+          <div class="box">
+            <span>CHILDREN </span> <br />
+            <input type="number" placeholder="01" />
+          </div>
+          <div class="box">
+            <span>BRANCH </span> <br />
+            <select id="branchMove">
+              <option>Ha Noi</option>
+              <option>Ho Chi Minh</option>
+              <option>Da Nang</option>
+              <option>Phan Thiet</option>
+            </select>
+          </div>
+          <div class="box1">
+            <button class="flex1" onclick="moveBranch()">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="promotion" id="promotion">
+      <div class="container">
+        <div id="slideshow">
+          <div class="slide-wrapper">
+            <div class="slide"><img src="../images/Hotel.png" /></div>
+            <div class="slide">
+              <img
+                src="../images/Black and Yellow Modern Black Friday Sale Facebook Ad.png"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="../images/Black Gold Modern Black Friday Sale Flyer.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="suggest" id="suggest">
+      <div class="container">
+        <div class="heading">
+          <h1>OUR SUGGEST</h1>
+        </div>
+        <!--  -->
+        <div class="content flex top">
+          <div class="left">
+            <h3>RESORT CLASSIC ROOM OCEANVIEW</h3>
+            <p>
+              Relax at our luxury resort in Vietnam where contemporary design
+              meets Vietnamese-inspired décor amidst a spacious 70 sqm Classic
+              Room.
+            </p>
+            <a href="./suggest.html">
+              <button class="flex1">
+                <span>View more</span>
+                <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </a>
+          </div>
+          <div class="right">
+            <img
+              src="../images/ICPQ_Resort-Classic-Ocean-View1-1-870x555.jpg"
+              alt=""
+              width="500px"
+              height="300px"
+            />
+          </div>
+        </div>
+        <!-- suggest2 -->
+        <div class="content flex top1">
+          <div class="left">
+            <h3>ROYAL STYLE WITH ROYAL ROOM</h3>
+            <p>
+              Bringing great inspiration and energy by the spacious space of the
+              corner unit with a large balcony full of sunlight and the
+              exclusive privileges we bring to you.
+            </p>
+            <a href="./suggest2.html">
+              <button class="flex1">
+                <span>View more</span>
+                <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </a>
+          </div>
+          <div class="right">
+            <img
+              src="../images/luxury.jpg"
+              alt=""
+              width="500px"
+              height="300px"
+            />
+          </div>
+        </div>
+        <!--  -->
+        <div class="content flex top">
+          <div class="left">
+            <h3>WARMER WITH VINTAGE ROOM</h3>
+            <p>
+              Bringing great inspiration and energy by the spacious space of the
+              vintage room. Enjoy your vacation with your family
+            </p>
+            <a href="./suggest3.html">
+              <button class="flex1">
+                <span>View more</span>
+                <i class="fas fa-arrow-circle-right"></i></button
+            ></a>
+          </div>
+          <div class="right">
+            <img
+              src="../images/vintageroom.jpg"
+              alt=""
+              width="500px"
+              height="300px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="rooms" id="rooms">
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading">
+          <h1>OUR HOTEL</h1>
+        </div>
+        <!--  -->
+        <div class="background">
+          <div class="content grid2 mtop">
+            <!-- 1 -->
+            <div class="box flex">
+              <div id="hanoi" class="left">
+                <img
+                  src="../images/thiet-ke-khach-san-hien-dai-5-sao-13-tang-so-huu-khong-gian-nghi-duong-hoan-hao-1.jfif"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <h2>DASAN HA NOI</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  DASAN Ha Noi located in the modern, quiet and fresh Xala New
+                  Urban Area, right in the heart of Ha Dong District, Hanoi.
+                  Comfort and convenience are the first impressions when
+                  visitors arrive here.
+                </p>
+                <h5>From 1.000.000 VND/night</h5>
+                <a href="./roomdetailhanoi.html">
+                  <button class="flex1">
+                    <span>Check Now</span>
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="box flex">
+              <div class="left" id="danang">
+                <img
+                  src="../images/dlg-hotel-danang-khach-san-4-sao-ven-bien-da-nang-1568778998.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <h2>DASAN DA NANG</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  DASAN Da Nang hotel is located in a prime location, between
+                  the romantic Han River on one side and the most beautiful
+                  beach in Central Vietnam on the other.
+                </p>
+                <h5>From 1.000.000 VND/night</h5>
+                <a href="./roomdetaildanang.html">
+                  <button class="flex1">
+                    <span>Check now</span>
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="box flex">
+              <div class="left" id="hochiminh">
+                <img src="../images/hochiminh.jpg" />
+              </div>
+              <div class="right">
+                <h2>DASAN HO CHI MINH</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  Located in the center of Phu Nhuan district - City. Ho Chi
+                  Minh City with convenient traffic location both by road and by
+                  air, DASAN Ho Chi Minh is built according to 5-star standard
+                  with 239 luxurious rooms along with high-class utility system.
+                </p>
+                <h5>From 1.000.000 VND/night</h5>
+                <a href="./roomdetailhcm.html">
+                  <button class="flex1">
+                    <span>Check Now</span>
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="box flex">
+              <div class="left" id="phanthiet">
+                <img src="../images/a6cbb9f91a47fc4658f5fb179a943091.jpg" />
+              </div>
+              <div class="right">
+                <h2>DASAN PHAN THIET</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  With a system of fully-equipped rooms, restaurant, conference
+                  center, massage, karaoke, coffee bar ... equipped with modern,
+                  sophisticated and harmonious design, DASAN Phan Thiet is
+                  definitely a great destination. when you arrive at Phan Thiet.
+                </p>
+                <h5>From 1.000.000 VND/night</h5>
+                <a href="./roomdetailphanthiet.html">
+                  <button class="flex1">
+                    <span>Check Now</span>
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUTTON FORM BOOKING -->
+    <div class="btnFormBooking">
+      <button onclick="popUp()">BOOKING NOW</button>
+    </div>
+
+    <!--  -->
+    <section class="gallery">
+      <div class="container">
+        <div class="heading">
+          <h1>OUR GALLERY</h1>
+        </div>
+        <div class="container1">
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <img src="../images/slide1.jfif" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="../images/slide2.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="../images/slide3.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="../images/cafe.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="../images/breakfast-buffet.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="../images/buffet.jpg" style="width: 100%" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="../images/slide1.jfif"
+                width:100%
+                onclick="currentSlide(1)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="../images/slide2.jpg"
+                style="width: 100%"
+                onclick="currentSlide(2)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="../images/slide3.jpg"
+                style="width: 100%"
+                onclick="currentSlide(3)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="../images/cafe.jpg"
+                style="width: 100%"
+                onclick="currentSlide(4)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="../images/breakfast-buffet.jpg"
+                style="width: 100%"
+                onclick="currentSlide(5)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="../images/buffet.jpg"
+                style="width: 100%"
+                onclick="currentSlide(6)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL POPUP -->
+    <div class="bgModal" id="bgModal">
+      <div class="headerModal">
+        <span class="close" id="close">&times;</span>
+        <span>MAKE YOUR RESERVATION</span>
+      </div>
+      <div class="contentModal">
+        <form action="payment.html">
+          <div>
+            <table>
+              <tr>
+                <th colspan="2">Your information</th>
+              </tr>
+              <tr>
+                <td><label for="fullname">Full name</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="phone">PhoneNo</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter your number"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="payment">Payment Method</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="payment"
+                    placeholder="Only accept online payment"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="note">Notes</label></td>
+                <td>
+                  <textarea
+                    name="note"
+                    id="note"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <!--  -->
+            <table>
+              <tr>
+                <th colspan="2">Selected Room Information</th>
+              </tr>
+              <tr>
+                <td><label for="branch">Branch</label></td>
+                <td>
+                  <select name="branch" id="branch">
+                    <option value="Ho Chi Minh">Ho Chi Minh</option>
+                    <option value="Da Nang">Da Nang</option>
+                    <option value="Phan Thiet">Phan Thiet</option>
+                    <option value="Ha Noi">Ha Noi</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="roomtype">Roomtype</label></td>
+                <td>
+                  <select name="roomtype" id="roomtype">
+                    <option value="Deluxe King">Deluxe King</option>
+                    <option value="Deluxe Triple">Deluxe Triple</option>
+                    <option value="Deluxe Queen">Deluxe Queen</option>
+                    <option value="Deluxe Twin">DeluxeTwin</option>
+                    <option value="Deluxe Double">Deluxe Double</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="adult">Adults</label></td>
+                <td>
+                  <input type="number" name="adult" id="adult" required />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="child">Children</label></td>
+                <td>
+                  <input type="number" name="child" id="child" required />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="fromdate">From</label></td>
+
+                <td>
+                  <input type="date" name="fromdate" id="fromdate" required />
+                  <label for="todate">to</label>
+                  <input type="date" name="todate" id="todate" required />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <button>Confirm booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </body>
+</html>

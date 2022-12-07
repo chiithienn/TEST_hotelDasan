@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ha Noi</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../JS/roomdetail.js" defer></script>
+    <link rel="stylesheet" href="../CSS/roomdetail.css" />
+  </head>
+  <style>
+    .home {
+      background-image: url(../images/3-phophandinhphung-8220-161762-3476-4738-1620705377.jpg);
+    }
+  </style>
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- BODY -->
+    <section class="home" id="home">
+      <div class="container">
+        <h1>HA NOI</h1>
+        <p>Enjoy your vacation</p>
+
+        <div class="content grid">
+          <div class="box">
+            <span>CHECKIN DATE </span> <br />
+            <input type="date" placeholder="29/20/2021" />
+          </div>
+          <div class="box">
+            <span>CHECKOUT DATE </span> <br />
+            <input type="date" placeholder="29/20/2021" />
+          </div>
+          <div class="box">
+            <span>ADULTS</span> <br />
+            <input type="number" placeholder="01" />
+          </div>
+          <div class="box">
+            <span>CHILDREN </span> <br />
+            <input type="number" placeholder="01" />
+          </div>
+          <div class="box">
+            <span>BRANCH </span> <br />
+            <select id="branchBooking" onchange="changeBranch()">
+              <option>Ha Noi</option>
+              <option>Ho Chi Minh</option>
+              <option>Da Nang</option>
+              <option>Phan Thiet</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rooms" id="rooms">
+      <div class="container">
+        <div class="heading">
+          <h1>OUR ROOMS</h1>
+        </div>
+        <div class="background">
+          <div class="content grid2 mtop">
+            <div class="box flex">
+              <div class="left">
+                <img src="../images/phong-Deluxe-Twin.png" alt="" />
+              </div>
+              <div class="right">
+                <h2>Deluxe Twin</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <p>
+                  Deluxe Twin bedroom includes 2 single beds with luxurious
+                  furniture that is equally cozy and elegant.
+                  <br />
+                  Deluxe Twin room has a comfortable space with impressive city
+                  view.
+                </p>
+                <h5>From 1.400.000 VND/night</h5>
+                <button class="flex1" onclick="popUp()">
+                  <span>Book Now &nbsp;</span>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box flex">
+              <div class="left">
+                <img src="../images/phong-Deluxe-Triple.jpg" alt="" />
+              </div>
+              <div class="right">
+                <h2>Deluxe Triple</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  Deluxe Triple Room has air conditioning, cable TV and sofa.
+                  Deluxe Triple bedroom includes 3 single beds with luxurious
+                  furniture that is equally cozy and elegant, suitable for
+                  business trips, travel with family and friends.
+                </p>
+                <h5>From 2.000.000 VND/night</h5>
+                <button class="flex1" onclick="popUp()">
+                  <span>Book Now &nbsp;</span>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box flex">
+              <div class="left">
+                <img src="../images/phong-Deluxe-King.png" alt="" />
+              </div>
+              <div class="right">
+                <h2>Deluxe King</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  Premium Deluxe King rooms offer a tranquil experience in the
+                  heart of a vibrant city. The room has an area of 35m2.
+                </p>
+                <h5>From 1.000.000/night</h5>
+                <button class="flex1" onclick="popUp()">
+                  <span>Book Now &nbsp;</span>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box flex">
+              <div class="left">
+                <img src="../images/phong-Deluxe-Double.jpg" alt="" />
+              </div>
+              <div class="right">
+                <h2>Deluxe Double</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  Deluxe Double is a room with a large bed or in other words, a
+                  room with a Double bed (1.5x2m). This type of room is usually
+                  suitable for couples or couples with 2 people who can sleep
+                  together.
+                </p>
+                <h5>From 1.600.000 VND/night</h5>
+                <button class="flex1" onclick="popUp()">
+                  <span>Book Now &nbsp;</span>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box flex">
+              <div class="left">
+                <img src="../images/phong-deluxe-queen-1536x1025.jpg" alt="" />
+              </div>
+              <div class="right">
+                <h2>Deluxe Queen</h2>
+                <div class="rate flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>
+                  Similar to the Deluxe King room, the Deluxe Queen room will
+                  also include the same furniture, furnishings and amenities as
+                  the King room. The only difference is that the bed size of the
+                  Queen room will be smaller, specifically about 1.6m x 2m.
+                  Therefore, to save money and still experience the most
+                  luxurious and classy things, you should choose this room type.
+                </p>
+                <h5>From 1.000.000/night</h5>
+                <button class="flex1" onclick="popUp()">
+                  <span>Book Now &nbsp;</span>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL POPUP -->
+    <div class="bgModal" id="bgModal">
+      <div class="headerModal">
+        <span class="close" id="close">&times;</span>
+        <span>MAKE YOUR RESERVATION</span>
+      </div>
+      <div class="contentModal">
+        <form action="payment.html">
+          <div>
+            <table>
+              <tr>
+                <th colspan="2">Your information</th>
+              </tr>
+              <tr>
+                <td><label for="fullname">Full name</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="phone">PhoneNo</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter your number"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="payment">Payment Method</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="payment"
+                    placeholder="Only accept online payment"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="note">Notes</label></td>
+                <td>
+                  <textarea
+                    name="note"
+                    id="note"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <!--  -->
+            <table>
+              <tr>
+                <th colspan="2">Selected Room Information</th>
+              </tr>
+              <tr>
+                <td><label for="branch">Branch</label></td>
+                <td>
+                  <select name="branch" id="branch">
+                    <option value="Ho Chi Minh">Ho Chi Minh</option>
+                    <option value="Da Nang">Da Nang</option>
+                    <option value="Phan Thiet">Phan Thiet</option>
+                    <option value="Ha Noi">Ha Noi</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="roomtype">Roomtype</label></td>
+                <td>
+                  <select name="roomtype" id="roomtype">
+                    <option value="Deluxe King">Deluxe King</option>
+                    <option value="Deluxe Triple">Deluxe Triple</option>
+                    <option value="Deluxe Queen">Deluxe Queen</option>
+                    <option value="Deluxe Twin">DeluxeTwin</option>
+                    <option value="Deluxe Double">Deluxe Double</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="adult">Adults</label></td>
+                <td>
+                  <input
+                    type="number"
+                    name="adult"
+                    id="adult"
+                    min="0"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="child">Children</label></td>
+                <td>
+                  <input
+                    type="number"
+                    name="child"
+                    id="child"
+                    min="0"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="fromdate">From</label></td>
+
+                <td>
+                  <input type="date" name="fromdate" id="fromdate" required />
+                  <label for="todate">to</label>
+                  <input type="date" name="todate" id="todate" required />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <button>Confirm booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </body>
+</html>

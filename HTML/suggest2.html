@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Room</title>
+   
+    <link rel="stylesheet" href="../CSS/suggest2.css" />
+
+    <script src="https://kit.fontawesome.com/95ad6bdf22.js" crossorigin="anonymous"></script>
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+
+</head>
+<body>
+  <section>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar flex1">
+          <ul class="nav-menu">
+            <li>
+              <div class="logo">
+                <img class="img_logo" src="../image/logo.png" alt="" />
+              </div>
+            </li>
+            <li class="signin"><a href="#home">Sign in</a></li>
+            <li class="aboutus"><a href="#about">About Us</a></li>
+            <li><a href="#room">Booking room</a></li>
+            <li><a href="#services">Service pack</a></li>
+            <li><a href="#shop">Booking event</a></li>
+            <li><a href="#testimonials">Promotion</a></li>
+            <li class="dropdown">
+              <a class="drop"
+                >EN &nbsp;<img
+                  class="img_flag"
+                  src="../image/EN.png"
+              /></a>
+              <div class="dropdown__content">
+                <a href="trang-tieng-viet"
+                  >VI &nbsp;<img
+                    class="img_flag"
+                    src="../image/VN.png"
+                /></a>
+              </div>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobliemmenu);
+
+      function mobliemmenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+   </section>
+    <section class="home" id="home">
+        <div class="container">
+          <h1>Royal Room</h1>
+          <p>Enjoy your vacation</p>
+        </div>
+      </section>
+      <section id="content" class="content">
+        <div class="container">
+        <p>Revel in the ease and grace of indoor-outdoor living in your Terrace Suite, as well as the exclusive privileges. You’ll be enchanted by the room’s playful interior details, and by the 180-degree ocean and jungle views from your upper-floor outdoor terrace. Best of all, you’re just a short stroll to the beach!</p>
+    <br>
+    <hr>
+    <div class="content flex top">
+        <div class="left">
+            <div class="row">
+            <i class="fa-regular fa-square"></i>
+            <span class="title">SIZE</span><span class="p">80sqm</span> 
+        </div>
+        <div class="row">
+            <i class="fa-solid fa-bed"></i>
+            <span class="title">BEDS</span><span class="p">One King Bed</span>
+        </div>
+        <div class="row">
+            <i class="fa-solid fa-mountain-sun"></i>
+    <span class="title">VIEW</span> <span class="p">180-degree ocean and jungle views
+    </span></div>
+        </div>
+        <div class="right">
+            <div class="row">
+            <i class="fa-solid fa-user"></i>
+            <span class="title">OCCUPANCY</span><span class="p"> Up to three adults or two adults and two children under 12 years</span>
+        </div>
+        <div class="row">
+            <i class="fa-solid fa-bath"></i>
+            <span class="title">
+           BATHROOMS</span> <span class="p"></span> Double vanities, rain shower, separate marble tub</span>
+        </div>
+ <div class="row">
+ 
+            <i class="fa-solid fa-couch"></i> <span class="title">UNIQUE FEATURES</span><span class="p">Corner room, panoramic views</span></div>
+        </div>
+
+    </div>
+    
+    </div>  
+    
+    </section>
+    
+    <section class="roomamenities">
+    <div class="container">
+        <h1>ROOM AMENITIES</h1>
+        <div class="content">
+            <div class="left">
+            <p>King bedroom with TV and desk
+                <br>
+                <br>
+                <hr>
+                <br>
+Oversized bathroom with double vanities, rain shower, and separate marble tub
+<br>
+<br>
+<hr>
+<br>
+Terrace with seating for relaxation in the fresh air
+<br>
+<br>
+<hr>
+<br>
+Bose sound system</p>
+</div>
+<div class="right">
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide"><img src="../images/royalroom.jpg"></div>
+            <div class="slide"><img src="../images/royalview.jpg"></div>
+            <div class="slide"><img src="../images/istockphoto-177112902-612x612.jpg"></div>
+        </div>
+      </div>
+</div>
+</div>
+         </section>
+
+    <div class="button">
+        <a href="./bookingroom.html"><button >
+            <i class="fa-solid fa-arrow-left-long"></i><span>BACK</span>
+
+        </button></a>
+    </div>
+</body>
+</html>

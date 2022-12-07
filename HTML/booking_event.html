@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKING EVENT</title>
+    <link rel="stylesheet" href="../CSS/booking_event.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../JS/booking_event.js" defer></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <!-- DẤU TRANG -->
+    <div class="containerDauTrang">
+      <div class="dautrang">
+        <h1>WELCOME TO EVENT ORGANIZTION</h1>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+    <div class="page-content">
+      <div class="content-top">
+        <div class="title">
+          <p>IDEAL CHOICE FOR<br />HIGH CONFERENCE</p>
+          <button onclick="location.href= 'gioiThieu_phong_hoi_nghi.html';">
+            View More
+          </button>
+        </div>
+        <div class="text">
+          Continuous room systems long term location of hotel nationwide
+          designed with efficient functions, supplying
+          <span>modern equipment</span> and <span>the largest</span> capacity in
+          the world. These benefits are integrated in the restaurant and
+          entertainment system of <span>DASAN</span> hotel bringing a perfect
+          space for conference events, workshops, extras... serving hundreds of
+          customers same time with <span>highest quality</span>.
+        </div>
+      </div>
+
+      <div class="content-bottom">
+        <div class="content">
+          <div class="text">
+            Let's experience high-class Banquet and Conference services at DASAN
+            Hotel. Conference and banquet rooms are equipped with modern
+            lighting technology equipment. Whether it is an intimate meeting or
+            an important business conference, our professional staff provides
+            optimal support to bring the highest satisfaction to customers.
+          </div>
+          <div class="title">
+            <p>UNFORGETTABLE GREATE CONFERENCE</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="../images/conference-room2.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="select">
+        <select name="Chọn chi nhánh" id="chinhanh" onchange="selectBranch()">
+          <option disabled selected>Choose branch</option>
+          <option value="TPHCM" id="TPHCM">HO CHI MINH</option>
+          <option value="Hanoi" id="Hanoi">HA NOI</option>
+          <option value="Danang" id="Danang">DA NANG</option>
+          <option value="Phanthiet" id="Phanthiet">PHAN THIET</option>
+        </select>
+      </div>
+
+      <!-- =================================================================== -->
+      <table class="table HCM">
+        <tr>
+          <th colspan="4">DASAN HO CHI MINH</th>
+        </tr>
+        <tr class="black">
+          <td>Name</td>
+          <td>Maximum capacity</td>
+          <td>Size</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Flower</td>
+          <td>500-600</td>
+          <td>600m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Panda</td>
+          <td>100-200</td>
+          <td>300m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr id="locationFocus">
+          <td>Sea</td>
+          <td>50-100</td>
+          <td>150m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+      </table>
+
+      <table class="table HN">
+        <tr>
+          <th colspan="4">DASAN HA NOI</th>
+        </tr>
+        <tr class="black">
+          <td>Name</td>
+          <td>Maximum capacity</td>
+          <td>Size</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Flower</td>
+          <td>500-600</td>
+          <td>600m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Panda</td>
+          <td>100-200</td>
+          <td>300m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sea</td>
+          <td>50-100</td>
+          <td>150m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+      </table>
+
+      <table class="table DN">
+        <tr>
+          <th colspan="4">DASAN DA NANG</th>
+        </tr>
+        <tr class="black">
+          <td>Name</td>
+          <td>Maximum capacity</td>
+          <td>Size</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Flower</td>
+          <td>500-600</td>
+          <td>600m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Panda</td>
+          <td>100-200</td>
+          <td>300m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sea</td>
+          <td>50-100</td>
+          <td>150m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+      </table>
+
+      <table class="table PT">
+        <tr>
+          <th colspan="4">DASAN PHAN THIET</th>
+        </tr>
+        <tr class="black">
+          <td>Name</td>
+          <td>Maximum capacity</td>
+          <td>Size</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Flower</td>
+          <td>500-600</td>
+          <td>600m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Panda</td>
+          <td>100-200</td>
+          <td>300m<sup>2</sup></td>
+          <td>
+            <button class="button">Booking</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sea</td>
+          <td>50-100</td>
+          <td>150m<sup>2</sup></td>
+          <td>
+            <button class="button" id="button">Booking</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="formHoiNghi"></div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </body>
+</html>

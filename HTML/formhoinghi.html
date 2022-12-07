@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/formhoinghi.css" />
+    <script src="../JS/formhoinghi.js" defer></script>
+  </head>
+  <body>
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>PLEASE FILL IN THE FORM BELOW</h2>
+        </div>
+
+        <div class="modal-body">
+          <!--  -->
+          <form action="#">
+            <div class="conferenceform">
+              <table>
+                <tr>
+                  <th colspan="2">CONFERENCE BOOKING</th>
+                </tr>
+                <tr>
+                  <td class="left">
+                    <label for="fullname"><b>Fullname</b></label>
+                    <input type="text" name="fullname" id="fullname" required />
+                    <br />
+                    <br />
+
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" name="phone" id="phone" required />
+                    <br />
+                    <br />
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" name="email" id="email" required />
+                    <br />
+                    <br />
+
+                    <label for="type"><b>Conference Type</b></label>
+                    <input type="text" name="type" id="type" />
+                    <br />
+                    <br />
+                  </td>
+                  <td class="right">
+                    <label for="bookdate"><b>Booking Date</b></label>
+                    <input type="date" name="bookdate" id="bookdate" required />
+                    <br />
+                    <br />
+
+                    <label for="notes"><b>Notes</b></label>
+                    <input type="text" name="notes" id="notes" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--  -->
+            <div class="confirminfo">
+              <table>
+                <tr>
+                  <th colspan="2">Selected Room Information</th>
+                </tr>
+
+                <tr>
+                  <td>Branch</td>
+                  <td>PHAN THIET</td>
+                </tr>
+
+                <tr>
+                  <td>Room name</td>
+                  <td>Flower</td>
+                </tr>
+
+                <tr>
+                  <td>Max capacity</td>
+                  <td>500-600</td>
+                </tr>
+
+                <tr>
+                  <td>Size</td>
+                  <td>500m<sup>2</sup></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+                    <input
+                      type="submit"
+                      id="send"
+                      value="Send request"
+                      onclick="popUpMessage()"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL SEND REQUEST SUCCESS -->
+    <div class="modalSendSuccess" id="modalSendSuccess">
+      <div class="messageModal">
+        <div>
+          <img src="../images/success.png" />
+        </div>
+        <div>Request send successfully!</div>
+        <div>We will contact for details consultancy in the minest time.</div>
+        <div>
+          <button id="okClose">OK</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
