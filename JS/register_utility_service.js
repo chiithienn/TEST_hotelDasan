@@ -51,6 +51,8 @@ function tick1() {
   if (tick1.onclick) {
     containerTick1.innerHTML = iconTicked1;
   }
+
+  document.getElementById("restaurant").style.display = "block";
 }
 function tick2() {
   let iconTicked2 =
@@ -60,6 +62,8 @@ function tick2() {
   if (tick2.onclick) {
     containerTick2.innerHTML = iconTicked2;
   }
+
+  document.getElementById("spa").style.display = "block";
 }
 function cancelTicked1() {
   let iconTick1 =
@@ -68,6 +72,7 @@ function cancelTicked1() {
   if (ticked1.onclick) {
     containerTick1.innerHTML = iconTick1;
   }
+  document.getElementById("restaurant").style.display = "none";
 }
 function cancelTicked2() {
   let iconTick2 =
@@ -77,4 +82,5 @@ function cancelTicked2() {
   if (ticked2.onclick) {
     containerTick2.innerHTML = iconTick2;
   }
+  document.getElementById("restaurant").style.display = "none";
 }

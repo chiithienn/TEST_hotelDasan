@@ -343,6 +343,7 @@ html {
   margin: 0 0 0 75px;
 }
 .fillRight .restaurantForm {
+  display: none;
   margin: 0 0 50px 0;
   background-color: black;
   color: #fefefe;
@@ -350,6 +351,7 @@ html {
   height: 200px;
 }
 .fillRight .spaForm {
+  display: none;
   background-color: black;
   color: #fefefe;
   padding: 20px;
